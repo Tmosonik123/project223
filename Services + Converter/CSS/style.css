@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@600&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Alkatra', cursive;
+}
+body{
+
+min-height: 100vh;
+padding: 0;
+margin: 0;
+background-position: center;
+background-size: contain;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-height: fit-content;
+    margin: 0 auto;
+}
+.logo{
+    display: flex;
+    margin: 1rem 2rem;
+
+}
+.logo h3{
+    font-size: 3rem;
+    color: #fff;
+    text-decoration: underline .2rem #b40557;
+    font-weight: bold;
+
+}
+.logo h3 span{
+    color: #b40557;
+    text-decoration: underline .2rem #fff;
+}
+.logo h3:hover{
+    cursor: pointer;
+}
+nav{
+    margin: 1rem 2rem;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.3rem;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: .3rem 1.2rem;
+    background: #b40557;
+    border: .15rem solid #b40557;
+    border-radius: 2rem;
+}
+nav ul li a:hover{
+    cursor: pointer;
+    background: transparent;
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+::selection{
+    color: #fff;
+    background: #5f0436;
+    }
+    .wrapper{
+        margin: 2rem auto;
+        display: flex;
+        flex-direction: column;
+        width: 37.5rem;
+        padding: 1.9rem;
+        border-radius: 7px;
+        background: #fff;
+        text-align: center;
+        box-shadow: 0.4rem 0.4rem 1.25rem rgba(0, 0, 0, 0.05);
+    }
+    
+    .wrapper .head{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: center;
+        background: none;
+    }
+    .wrapper form{
+    margin: 1.88rem 0 1.3rem 0;
+    }
+    form :where(input, select, button){
+    width: 100%;
+    outline: none;
+    border-radius: .3rem;
+    border: none;
+    }
+    form p{
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    }
+    form input{
+    height: 3rem;
+    font-size: 1.1rem;
+    padding: 0 .9rem;
+    border: 1px solid #999;
+    }
+    form input:focus{
+    padding: 0 .88rem;
+    border: 2px solid #b501da;
+    }
+    form .drop-list{
+    display: flex;
+    margin-top: 1.3rem;
+    align-items: center;
+    justify-content: space-between;
+    }
+    .drop-list .select-box{
+    display: flex;
+    width: 9.4rem;
+    height: 2.8rem;
+    align-items: center;
+    border-radius: .3rem;
+    justify-content: center;
+    border: .06rem solid #999;
+    }
+    .select-box img{
+    max-width: 1.3rem;
+    }
+    .select-box select{
+    width: auto;
+    font-size: 1rem;
+    background: none;
+    margin: 0 -.3rem 0 .3rem;
+    }
+    .select-box select::-webkit-scrollbar{
+    width: .5rem;
+    }
+    .select-box select::-webkit-scrollbar-track{
+    background: #fff;
+    }
+    .select-box select::-webkit-scrollbar-thumb{
+    background: #888;
+    border-radius: .5rem;
+    border-right: .13rem solid #ffffff;
+    }
+    .drop-list .icon{
+    cursor: pointer;
+    margin-top: 1.9rem;
+    font-size: 1.4rem;
+    }
+    form .exchange-rate{
+    font-size: 1.06rem;
+    margin: 1.25rem 0 1.88rem ;
+    }
+    form button{
+    height: 3.25rem;
+    color: #fff;
+    font-size: 1.06rem;
+    cursor: pointer;
+    background:#5a012b ;
+    transition: 0.3s ease;
+    }
+    form button:hover{
+    background: #af0663;
+    }
+
+
+
+/*=========Media Queries===============*/
+@media (max-width:705px){
+    header{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+@media (max-width:635px){
+  .wrapper{
+    width: 85%;
+  }
+  footer{
+    flex-direction: column;
+  }
+}
+@media (max-width:540px){
+  .wrapper form {
+    display: flex;
+    flex-direction: column;
+  }
+  form input{
+    height: 2rem;
+    font-size: .8rem;
+    padding: 0 .5rem;
+
+    }
+}
+@media (max-width:475px){
+    .drop-list .select-box{
+        width: 6rem;
+        height: 1.8rem;
+        border-radius: .3rem;
+        }
+
+}
+@media (max-width:370px){
+    .drop-list .icon{
+        display: none;
+    }
+.wrapper{
+    padding: .5rem;
+    margin: 1rem .5rem;
+}
+.wrapper .head{
+    margin: .5rem;
+}
+}
+@media (max-width:445px){
+    header{
+        height: fit-content;
+    }
+    header nav ul {
+        flex-direction: column;
+
+    }
+    nav ul li a{
+        padding: 0 .5rem;
+        text-decoration: underline .2rem #5f0730;
+        border: none;
+        background: none;
+    }
+    nav ul li a:hover{
+        color: #5f0730;
+        text-decoration: underline .2rem #fff;
+    }
+}
